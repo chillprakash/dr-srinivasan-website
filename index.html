@@ -172,7 +172,7 @@
                 padding: 0.5rem 0.75rem max(0.5rem, env(safe-area-inset-bottom)); gap: 0.5rem;
             }
             body { padding-bottom: 68px; }
-            .wa-float { bottom: 80px !important; }
+            .wa-float { display: none !important; }
         }
 
         /* ── Blockquote style ──────────────── */
@@ -214,8 +214,8 @@
                     </a>
                 </div>
                 <button id="menuBtn" class="sm:hidden w-8 h-8 flex flex-col items-center justify-center gap-1.5" aria-label="Menu">
-                    <span class="w-5 h-0.5 bg-deep rounded-full"></span>
-                    <span class="w-5 h-0.5 bg-deep rounded-full"></span>
+                    <span id="menuLine1" class="w-5 h-0.5 bg-deep rounded-full transition-all duration-300 origin-center"></span>
+                    <span id="menuLine2" class="w-5 h-0.5 bg-deep rounded-full transition-all duration-300 origin-center"></span>
                 </button>
             </div>
         </div>
@@ -822,13 +822,25 @@
         // Mobile menu
         var menuBtn = document.getElementById('menuBtn');
         var menu = document.getElementById('mobileMenu');
+        var line1 = document.getElementById('menuLine1');
+        var line2 = document.getElementById('menuLine2');
         var open = false;
+        function updateMenuIcon() {
+            if (open) {
+                line1.style.transform = 'translateY(4px) rotate(45deg)';
+                line2.style.transform = 'translateY(-4px) rotate(-45deg)';
+            } else {
+                line1.style.transform = '';
+                line2.style.transform = '';
+            }
+        }
         menuBtn.addEventListener('click', function() {
             open = !open;
             menu.classList.toggle('hidden', !open);
+            updateMenuIcon();
         });
         document.querySelectorAll('.mobile-link').forEach(function(a) {
-            a.addEventListener('click', function() { open = false; menu.classList.add('hidden'); });
+            a.addEventListener('click', function() { open = false; menu.classList.add('hidden'); updateMenuIcon(); });
         });
 
         // Scroll reveal
