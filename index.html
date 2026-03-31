@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Srinivasan | Vascular &amp; Diabetic Foot Surgeon | Jeeva Clinic, Theni</title>
+    <meta name="description" content="Dr. Srinivasan - Vascular &amp; Diabetic Foot Surgeon at Jeeva Clinic, Theni. Specializing in limb salvage, varicose vein treatment, and diabetic wound care. Over 15 years of experience.">
+    <meta name="theme-color" content="#1a365d">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dr. Srinivasan | Vascular &amp; Diabetic Foot Surgeon | Theni">
+    <meta property="og:description" content="Vascular and diabetic foot care at Jeeva Clinic, Theni. Saving limbs, treating varicose veins, healing wounds.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="doctor.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    deep:    { DEFAULT:'#1a365d', light:'#2a4a7f', lighter:'#3d5a8a' },
+                    calm:    { DEFAULT:'#0d9488', light:'#14b8a6', dark:'#0f766e', subtle:'#f0fdfa' },
+                    warm:    { DEFAULT:'#b45309', light:'#d97706' },
+                    sand:    { DEFAULT:'#faf8f5', dark:'#f0ece4' },
+                    text:    { DEFAULT:'#1e293b', secondary:'#475569', muted:'#64748b' },
+                },
+                fontFamily: {
+                    heading: ['"Source Serif 4"', 'Georgia', 'serif'],
+                    body:    ['"DM Sans"', 'system-ui', 'sans-serif'],
+                },
+            }
+        }
+    }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Physician",
+        "name": "Dr. Srinivasan",
+        "description": "Vascular & Diabetic Foot Surgeon at Jeeva Clinic, Theni. Specializing in limb salvage, varicose veins, and diabetic wound care.",
+        "medicalSpecialty": "Vascular Surgery",
+        "address": { "@type": "PostalAddress", "streetAddress": "Edamal Street, Opp to Nadar Saraswathy School", "addressLocality": "Theni", "addressRegion": "Tamil Nadu", "postalCode": "625531", "addressCountry": "IN" },
+        "sameAs": [
+            "https://www.youtube.com/@Podiovascularcentre",
+            "https://www.instagram.com/v3_podiovascular_dgl_theni",
+            "https://www.facebook.com/",
+            "https://x.com/"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org", "@type": "FAQPage",
+        "mainEntity": [
+            { "@type": "Question", "name": "What is diabetic foot and why is it dangerous?", "acceptedAnswer": { "@type": "Answer", "text": "Diabetic foot occurs when diabetes damages nerves and blood vessels in the feet, leading to ulcers, infections, and potential amputation. Early vascular treatment can save limbs and prevent complications." }},
+            { "@type": "Question", "name": "Can varicose veins be treated without open surgery?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Modern treatments like laser ablation and sclerotherapy are minimally invasive with shorter recovery and good cosmetic outcomes." }},
+            { "@type": "Question", "name": "When should I see a vascular surgeon?", "acceptedAnswer": { "@type": "Answer", "text": "If you experience leg pain while walking, swollen or discolored legs, non-healing foot wounds, visible bulging veins, or have diabetes with any foot concerns." }},
+            { "@type": "Question", "name": "Can amputation be avoided?", "acceptedAnswer": { "@type": "Answer", "text": "In many cases, yes. Vascular reconstruction, angioplasty, and proper wound care can restore blood flow and save limbs that were previously considered for amputation. Early consultation is key." }}
+        ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+        body { font-family: 'DM Sans', system-ui, sans-serif; color: #1e293b; background: #ffffff; overflow-x: hidden; }
+
+        /* ── Gentle scroll reveal ──────────── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible { opacity: 1; transform: none; }
+        .reveal-d1 { transition-delay: 0.1s; }
+        .reveal-d2 { transition-delay: 0.2s; }
+        .reveal-d3 { transition-delay: 0.3s; }
+
+        /* ── Hero entrance ─────────────────── */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(16px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.7s ease forwards;
+        }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.35s; }
+        .delay-4 { animation-delay: 0.5s; }
+
+        /* ── Nav ───────────────────────────── */
+        .nav-solid {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+        }
+
+        /* ── Hero background ───────────────── */
+        .hero-bg {
+            background: linear-gradient(170deg, #ffffff 0%, #f0f7ff 40%, #f0fdfa 70%, #faf8f5 100%);
+            position: relative;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute; inset: 0;
+            background-image:
+                linear-gradient(rgba(26,54,93,0.025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(26,54,93,0.025) 1px, transparent 1px);
+            background-size: 64px 64px;
+            pointer-events: none;
+        }
+
+        /* ── Condition cards ───────────────── */
+        .condition-card {
+            transition: box-shadow 0.3s ease;
+        }
+        .condition-card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+
+        /* ── Horizontal scroll ─────────────── */
+        .h-scroll {
+            display: flex; gap: 1.25rem;
+            overflow-x: auto; scroll-snap-type: x mandatory;
+            scrollbar-width: none; -ms-overflow-style: none;
+            padding-bottom: 0.5rem;
+        }
+        .h-scroll::-webkit-scrollbar { display: none; }
+        .h-scroll > * { scroll-snap-align: start; flex-shrink: 0; }
+
+        /* ── FAQ ───────────────────────────── */
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-open .faq-answer { max-height: 250px; }
+        .faq-open .faq-icon { transform: rotate(45deg); }
+        .faq-icon { transition: transform 0.3s ease; }
+
+        /* ── Video cards ───────────────────── */
+        .video-card { transition: box-shadow 0.3s ease; }
+        .video-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+
+        /* ── Section label ─────────────────── */
+        .section-label {
+            font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600;
+        }
+
+        /* ── Mobile bottom bar ─────────────── */
+        .mobile-bar { display: none; }
+        @media (max-width: 768px) {
+            .mobile-bar {
+                display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+                background: #fff; box-shadow: 0 -1px 12px rgba(0,0,0,0.08);
+                padding: 0.5rem 0.75rem max(0.5rem, env(safe-area-inset-bottom)); gap: 0.5rem;
+            }
+            body { padding-bottom: 68px; }
+            .wa-float { bottom: 80px !important; }
+        }
+
+        /* ── Blockquote style ──────────────── */
+        .quote-mark {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 4rem; line-height: 1; color: #e2e8f0;
+        }
+
+        /* ── Reduced motion ────────────────── */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-body">
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- NAVIGATION                              -->
+    <!-- ═══════════════════════════════════════ -->
+    <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-solid">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="font-heading font-semibold text-lg text-deep">
+                    Dr. Srinivasan
+                </a>
+                <div class="hidden sm:flex items-center gap-7">
+                    <a href="#about" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">About</a>
+                    <a href="#conditions" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">Conditions</a>
+                    <a href="#stories" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">Patient Stories</a>
+                    <a href="#contact" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">Contact</a>
+                    <!-- REPLACE: WhatsApp number -->
+                    <a href="https://wa.me/919962505662?text=Hello%20Dr.%20Srinivasan%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank"
+                       class="inline-flex items-center gap-2 bg-calm hover:bg-calm-dark text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors">
+                        <i class="fab fa-whatsapp text-base"></i> Book Consultation
+                    </a>
+                </div>
+                <button id="menuBtn" class="sm:hidden w-8 h-8 flex flex-col items-center justify-center gap-1.5" aria-label="Menu">
+                    <span class="w-5 h-0.5 bg-deep rounded-full"></span>
+                    <span class="w-5 h-0.5 bg-deep rounded-full"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="sm:hidden hidden bg-white border-t border-gray-100">
+            <div class="px-5 py-4 space-y-1">
+                <a href="#about" class="mobile-link block py-2.5 text-text font-medium text-sm">About</a>
+                <a href="#conditions" class="mobile-link block py-2.5 text-text font-medium text-sm">Conditions</a>
+                <a href="#stories" class="mobile-link block py-2.5 text-text font-medium text-sm">Patient Stories</a>
+                <a href="#contact" class="mobile-link block py-2.5 text-text font-medium text-sm">Contact</a>
+                <a href="https://wa.me/919962505662" target="_blank" class="block mt-3 text-center bg-calm text-white py-3 rounded-lg font-semibold text-sm">
+                    <i class="fab fa-whatsapp mr-2"></i>Book Consultation
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- HERO                                    -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="hero-bg pt-24 pb-16 lg:pt-28 lg:pb-24">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="grid lg:grid-cols-5 gap-10 lg:gap-14 items-center">
+
+                <!-- Text: 3 cols -->
+                <div class="lg:col-span-3">
+
+                    <!-- Credentials bar -->
+                    <div class="fade-in flex flex-wrap items-center gap-2 text-text-muted text-sm mb-6">
+                        <!-- REPLACE: actual qualifications -->
+                        <span class="bg-white border border-gray-200 px-3 py-1 rounded-md font-medium text-text-secondary">MCh Vascular Surgery</span>
+                        <span class="text-gray-300">|</span>
+                        <span>15+ years</span>
+                        <span class="text-gray-300">|</span>
+                        <span>Jeeva Clinic, Theni</span>
+                    </div>
+
+                    <h1 class="fade-in delay-1 font-heading font-semibold text-3xl sm:text-4xl lg:text-[2.75rem] text-deep leading-snug mb-5">
+                        Every limb that can be saved, must be saved.
+                    </h1>
+
+                    <p class="fade-in delay-1 text-lg sm:text-xl mb-2 font-medium" style="font-family: 'Noto Sans Tamil', sans-serif; color: #0f766e;">
+                        நாளங்கள் நலமாக்கப்படும்.
+                    </p>
+
+                    <p class="fade-in delay-2 text-text-secondary text-base lg:text-lg leading-relaxed mb-8 max-w-lg">
+                        Dr. Srinivasan is a vascular surgeon in Theni who specializes in saving limbs from amputation, treating varicose veins, and healing diabetic foot conditions. Over 500 patients have kept their limbs through vascular care at Jeeva Clinic.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="fade-in delay-3 flex flex-wrap gap-3 mb-8">
+                        <!-- REPLACE: WhatsApp number -->
+                        <a href="https://wa.me/919962505662?text=Hello%20Dr.%20Srinivasan%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank"
+                           class="inline-flex items-center gap-2.5 bg-calm hover:bg-calm-dark text-white px-6 py-3 rounded-lg font-semibold text-sm transition-colors">
+                            <i class="fab fa-whatsapp text-lg"></i> Book via WhatsApp
+                        </a>
+                        <!-- REPLACE: phone number -->
+                        <a href="tel:+919962505662"
+                           class="inline-flex items-center gap-2 border border-gray-300 hover:border-deep text-text px-6 py-3 rounded-lg font-semibold text-sm transition-colors">
+                            <i class="fas fa-phone-alt text-xs text-text-muted"></i> Call Clinic
+                        </a>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="fade-in delay-4 flex items-center gap-3">
+                        <a href="https://www.youtube.com/@Podiovascularcentre" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-red-50 flex items-center justify-center text-text-muted hover:text-red-500 transition-all text-sm" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/v3_podiovascular_dgl_theni" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-pink-50 flex items-center justify-center text-text-muted hover:text-pink-500 transition-all text-sm" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <!-- REPLACE: Facebook URL -->
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-blue-50 flex items-center justify-center text-text-muted hover:text-blue-600 transition-all text-sm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Photo: 2 cols -->
+                <div class="lg:col-span-2 fade-in delay-3">
+                    <div class="relative max-w-xs mx-auto lg:max-w-none">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
+                            <img src="doctor.png"
+                                 alt="Dr. Srinivasan - Vascular and Diabetic Foot Surgeon at Jeeva Clinic, Theni"
+                                 class="w-full h-full object-cover object-center"
+                                 loading="eager">
+                        </div>
+                        <div class="absolute -bottom-4 left-3 right-3 bg-white rounded-xl px-4 py-3 shadow-md border border-gray-100">
+                            <p class="text-deep font-heading font-semibold text-sm">Dr. Srinivasan</p>
+                            <p class="text-text-muted text-xs">Vascular &amp; Diabetic Foot Surgeon</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- ABOUT THE DOCTOR                        -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="about" class="py-16 lg:py-24 bg-white border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="max-w-3xl">
+
+                <p class="section-label text-calm-dark mb-4 reveal">About Dr. Srinivasan</p>
+
+                <!-- REPLACE: This entire section with the doctor's actual story and philosophy -->
+                <h2 class="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl text-deep leading-snug mb-6 reveal">
+                    "I chose vascular surgery because too many people were losing limbs that could have been saved."
+                </h2>
+
+                <div class="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed reveal reveal-d1">
+                    <p>
+                        Dr. Srinivasan has been practicing vascular surgery for over 15 years at Jeeva Clinic in Theni. His focus has always been on one principle: <strong class="text-text">explore every possibility before considering amputation.</strong>
+                    </p>
+                    <p>
+                        Many patients come to him after being told elsewhere that amputation is their only option. In a significant number of these cases, vascular reconstruction, angioplasty, or proper wound management has been able to save the limb.
+                    </p>
+                    <p>
+                        He treats patients with diabetic foot complications, varicose veins, peripheral arterial disease, deep vein thrombosis, and non-healing wounds. He believes in explaining every condition and treatment option clearly, so patients and their families can make informed decisions.
+                    </p>
+                </div>
+
+                <!-- Credentials -->
+                <div class="mt-10 pt-8 border-t border-gray-100 reveal reveal-d2">
+                    <h3 class="font-heading font-semibold text-lg text-deep mb-4">Training &amp; Credentials</h3>
+                    <!-- REPLACE: actual education, fellowships, affiliations -->
+                    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm text-text-secondary">
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-graduation-cap text-calm mt-0.5 text-xs"></i>
+                            <span>MBBS &mdash; <span class="text-text-muted">University details</span></span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-graduation-cap text-calm mt-0.5 text-xs"></i>
+                            <span>MS General Surgery &mdash; <span class="text-text-muted">University details</span></span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-graduation-cap text-calm mt-0.5 text-xs"></i>
+                            <span>MCh Vascular Surgery &mdash; <span class="text-text-muted">University details</span></span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-certificate text-calm mt-0.5 text-xs"></i>
+                            <span>Member, Vascular Society of India</span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-certificate text-calm mt-0.5 text-xs"></i>
+                            <span>Training in Endovascular Procedures</span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-language text-calm mt-0.5 text-xs"></i>
+                            <span>Languages: Tamil, English, Hindi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inline stats as honest prose -->
+                <div class="mt-8 bg-calm-subtle rounded-xl p-6 border border-calm/10 reveal reveal-d3">
+                    <p class="text-text-secondary text-sm leading-relaxed">
+                        <!-- REPLACE: actual numbers -->
+                        Over <strong class="text-text">15 years</strong> of practice.
+                        More than <strong class="text-text">500 limbs saved</strong> from amputation.
+                        Trusted by over <strong class="text-text">5,000 patients</strong> across Theni, Madurai, Dindigul, and surrounding districts.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- CONDITIONS TREATED                      -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="conditions" class="py-16 lg:py-24 bg-sand">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+
+            <p class="section-label text-calm-dark mb-4 reveal">Conditions We Treat</p>
+            <h2 class="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl text-deep leading-snug mb-4 reveal">
+                Are you or a family member dealing with any of these?
+            </h2>
+            <p class="text-text-secondary text-base lg:text-lg mb-12 max-w-2xl reveal">
+                If any of these sound familiar, a consultation can help clarify your options. Many conditions are treatable when caught early.
+            </p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <div class="condition-card reveal bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-teal-50 text-calm flex items-center justify-center mb-4">
+                        <i class="fas fa-shoe-prints text-sm"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">Diabetic Foot Problems</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">
+                        Non-healing ulcers, blackened toes, numbness, or infections in the feet. If you have diabetes and notice any changes in your feet, early treatment is critical.
+                    </p>
+                    <p class="text-calm-dark text-xs font-medium">Common in: Diabetes patients over 50</p>
+                </div>
+
+                <div class="condition-card reveal reveal-d1 bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
+                        <i class="fas fa-wave-square text-sm"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">Varicose Veins</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">
+                        Swollen, twisted veins visible under the skin, often with pain, heaviness, or itching in the legs. Modern treatments are minimally invasive with quick recovery.
+                    </p>
+                    <p class="text-calm-dark text-xs font-medium">Treated with: Laser, Sclerotherapy, RF ablation</p>
+                </div>
+
+                <div class="condition-card reveal reveal-d2 bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-rose-50 text-rose-600 flex items-center justify-center mb-4">
+                        <i class="fas fa-heart-pulse text-sm"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">Leg Pain While Walking</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">
+                        Pain, cramping, or tiredness in the legs during walking that goes away with rest. This is often a sign of Peripheral Arterial Disease (blocked arteries in the legs).
+                    </p>
+                    <p class="text-calm-dark text-xs font-medium">Diagnosis: Doppler ultrasound, ABI test</p>
+                </div>
+
+                <div class="condition-card reveal bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+                        <i class="fas fa-bandage text-sm"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">Non-Healing Wounds</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">
+                        Wounds on the legs or feet that have not healed for weeks or months despite treatment. Poor blood circulation is often the underlying cause.
+                    </p>
+                    <p class="text-calm-dark text-xs font-medium">Often linked to: Diabetes, arterial disease</p>
+                </div>
+
+                <div class="condition-card reveal reveal-d1 bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+                        <i class="fas fa-hand-holding-medical text-sm"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">Told You Need Amputation?</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">
+                        If another doctor has recommended amputation, it is worth getting a second opinion. In many cases, vascular surgery can restore blood flow and save the limb.
+                    </p>
+                    <p class="text-calm-dark text-xs font-medium">Seek: A vascular surgeon's evaluation first</p>
+                </div>
+
+                <div class="condition-card reveal reveal-d2 bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-violet-50 text-violet-600 flex items-center justify-center mb-4">
+                        <i class="fas fa-stethoscope text-sm"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">Swollen or Discolored Legs</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">
+                        Persistent swelling, skin discoloration, or heaviness in the legs can indicate Deep Vein Thrombosis or chronic venous insufficiency. Early screening helps prevent complications.
+                    </p>
+                    <p class="text-calm-dark text-xs font-medium">Screening: Doppler ultrasound</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- PATIENT STORIES                         -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="stories" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+
+            <p class="section-label text-calm-dark mb-4 reveal">Patient Stories</p>
+            <h2 class="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl text-deep leading-snug mb-4 reveal">
+                Hear from patients who have been through treatment
+            </h2>
+            <p class="text-text-secondary text-base lg:text-lg mb-10 max-w-2xl reveal">
+                These are real experiences from patients treated at Jeeva Clinic. Watch their stories or read their words below.
+            </p>
+
+            <!-- Video testimonials -->
+            <!-- REPLACE: Add actual YouTube video IDs. Format: src="https://www.youtube.com/embed/VIDEO_ID" -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6 reveal">
+                <div class="video-card rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <iframe class="w-full h-full" src="about:blank" data-src="" title="Patient Story 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-300"><i class="fab fa-youtube text-4xl"></i></div>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-text text-sm">Patient Recovery</p>
+                        <p class="text-text-muted text-xs mt-0.5">Diabetic foot treatment</p>
+                    </div>
+                </div>
+                <div class="video-card rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <iframe class="w-full h-full" src="about:blank" data-src="" title="Patient Story 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-300"><i class="fab fa-youtube text-4xl"></i></div>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-text text-sm">Varicose Veins Treatment</p>
+                        <p class="text-text-muted text-xs mt-0.5">Before and after</p>
+                    </div>
+                </div>
+                <div class="video-card rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <iframe class="w-full h-full" src="about:blank" data-src="" title="Patient Story 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-300"><i class="fab fa-youtube text-4xl"></i></div>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-text text-sm">Limb Saved from Amputation</p>
+                        <p class="text-text-muted text-xs mt-0.5">Vascular reconstruction</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 mb-14 reveal">
+                <a href="https://www.youtube.com/@Podiovascularcentre" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 text-calm-dark hover:text-calm font-medium text-sm transition-colors">
+                    <i class="fab fa-youtube"></i> More videos on YouTube <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+                <!-- REPLACE: Add actual Google Maps / Google Business review link -->
+                <a href="#" class="inline-flex items-center gap-2 text-text-muted hover:text-text font-medium text-sm transition-colors">
+                    <i class="fab fa-google"></i> Read reviews on Google <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Written testimonials -->
+            <h3 class="font-heading font-semibold text-lg text-deep mb-5 reveal">In their own words</h3>
+            <!-- REPLACE: Use actual patient testimonials with permission -->
+            <div class="h-scroll reveal">
+
+                <div class="w-80 sm:w-96 bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="quote-mark mb-2">&ldquo;</div>
+                    <p class="text-text-secondary text-sm leading-relaxed mb-5 -mt-6">I was told at two hospitals that my foot would need to be amputated. A relative suggested Dr. Srinivasan. He examined me carefully, explained the vascular procedure, and saved my foot. I walk to the temple every morning now.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-calm/10 text-calm-dark font-semibold text-xs flex items-center justify-center">R</div>
+                        <div><p class="font-semibold text-text text-sm">Rajesh</p><p class="text-text-muted text-xs">Diabetic foot patient, Theni</p></div>
+                    </div>
+                </div>
+
+                <div class="w-80 sm:w-96 bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="quote-mark mb-2">&ldquo;</div>
+                    <p class="text-text-secondary text-sm leading-relaxed mb-5 -mt-6">My varicose veins had been painful for three years. I was afraid of surgery. Doctor explained it would be done with laser and I could go home the same day. The pain is completely gone now.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs flex items-center justify-center">S</div>
+                        <div><p class="font-semibold text-text text-sm">Selvi</p><p class="text-text-muted text-xs">Varicose veins patient, Madurai</p></div>
+                    </div>
+                </div>
+
+                <div class="w-80 sm:w-96 bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="quote-mark mb-2">&ldquo;</div>
+                    <p class="text-text-secondary text-sm leading-relaxed mb-5 -mt-6">My father had a wound on his foot that would not heal for six months. Doctors near us did not know what to do. Dr. Srinivasan identified the blood flow problem and treated it. The wound healed fully in two months.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 font-semibold text-xs flex items-center justify-center">K</div>
+                        <div><p class="font-semibold text-text text-sm">Kumar</p><p class="text-text-muted text-xs">Son of patient, Dindigul</p></div>
+                    </div>
+                </div>
+
+                <div class="w-80 sm:w-96 bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="quote-mark mb-2">&ldquo;</div>
+                    <p class="text-text-secondary text-sm leading-relaxed mb-5 -mt-6">I travelled from Madurai because someone in my family had been treated here before. The clinic is clean, the staff is kind, and the doctor takes time to explain everything. My leg pain has reduced significantly after treatment.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 font-semibold text-xs flex items-center justify-center">V</div>
+                        <div><p class="font-semibold text-text text-sm">Vijay</p><p class="text-text-muted text-xs">PAD patient, Madurai</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- YOUR FIRST VISIT                        -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="py-16 lg:py-24 bg-sand">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="max-w-3xl">
+
+                <p class="section-label text-calm-dark mb-4 reveal">Your First Visit</p>
+                <h2 class="font-heading font-semibold text-2xl sm:text-3xl text-deep leading-snug mb-6 reveal">
+                    What to expect when you come to Jeeva Clinic
+                </h2>
+
+                <!-- REPLACE: actual visit details -->
+                <div class="space-y-6 reveal reveal-d1">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm-dark font-heading font-semibold text-sm flex-shrink-0 mt-0.5">1</div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-1">Book your appointment</p>
+                            <p class="text-text-muted text-sm leading-relaxed">Call the clinic or send a WhatsApp message with your preferred date and time. We will confirm your slot.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm-dark font-heading font-semibold text-sm flex-shrink-0 mt-0.5">2</div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-1">Bring your medical records</p>
+                            <p class="text-text-muted text-sm leading-relaxed">If you have previous test reports, prescriptions, or scans, please bring them. This helps the doctor understand your history quickly.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm-dark font-heading font-semibold text-sm flex-shrink-0 mt-0.5">3</div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-1">Consultation and examination</p>
+                            <p class="text-text-muted text-sm leading-relaxed">Dr. Srinivasan will examine you, may perform a Doppler ultrasound if needed, and explain the findings and treatment options clearly.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm-dark font-heading font-semibold text-sm flex-shrink-0 mt-0.5">4</div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-1">Clear treatment plan</p>
+                            <p class="text-text-muted text-sm leading-relaxed">You will leave with a clear understanding of your condition, the recommended treatment, expected timeline, and costs. No pressure, no rush.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment info -->
+                <div class="mt-8 flex flex-wrap gap-2 text-xs text-text-muted reveal reveal-d2">
+                    <!-- REPLACE: actual payment methods -->
+                    <span class="bg-white border border-gray-200 px-2.5 py-1 rounded-md">Cash</span>
+                    <span class="bg-white border border-gray-200 px-2.5 py-1 rounded-md">UPI (GPay, PhonePe)</span>
+                    <span class="bg-white border border-gray-200 px-2.5 py-1 rounded-md">Debit/Credit Cards</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- FAQ                                     -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="faq" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-2xl mx-auto px-5 sm:px-8">
+            <p class="section-label text-calm-dark mb-4 reveal">Common Questions</p>
+            <h2 class="font-heading font-semibold text-2xl sm:text-3xl text-deep leading-snug mb-8 reveal">
+                Questions patients often ask
+            </h2>
+
+            <div class="space-y-3 reveal">
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">What is diabetic foot and why is it dangerous?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">Diabetic foot occurs when diabetes damages nerves and blood vessels in the feet. This leads to loss of sensation, ulcers, and infections. Without proper blood flow, wounds do not heal and can lead to gangrene. Early vascular assessment and treatment can prevent these complications and save the limb.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">Can varicose veins be treated without open surgery?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">Yes. Modern treatments like endovenous laser ablation, radiofrequency ablation, and sclerotherapy are minimally invasive. Most patients go home the same day with minimal discomfort. The approach depends on the severity of the condition, which is assessed during consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">Can amputation really be avoided?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">In many cases, yes. If blood flow to the affected limb can be restored through angioplasty, stenting, or bypass surgery, the tissue can heal. The key is early consultation with a vascular surgeon. The sooner the blood flow is assessed, the better the chances of saving the limb.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">I live far from Theni. Is it worth travelling for a consultation?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">Many patients travel from Madurai, Dindigul, Cumbum, and other districts for treatment. For complex cases, a vascular surgeon's evaluation can make a significant difference in outcomes. You can send your reports via WhatsApp for an initial assessment before visiting.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">What should I bring to my first appointment?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">Bring any previous medical reports, blood test results, scans, and a list of medications you are currently taking. If you have diabetes, bring your recent HbA1c and sugar level reports. This helps the doctor assess your condition faster.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- CONTACT                                 -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="contact" class="py-16 lg:py-24 bg-sand border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+
+            <p class="section-label text-calm-dark mb-4 reveal">Contact</p>
+            <h2 class="font-heading font-semibold text-2xl sm:text-3xl text-deep leading-snug mb-10 reveal">
+                Jeeva Clinic, Theni
+            </h2>
+
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
+                <div class="space-y-6 reveal">
+                    <div class="flex items-start gap-4">
+                        <div class="w-9 h-9 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm flex-shrink-0"><i class="fas fa-map-marker-alt text-sm"></i></div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-0.5">Address</p>
+                            <p class="text-text-muted text-sm leading-relaxed">Edamal Street, Opp to Nadar Saraswathy School,<br>Theni, Tamil Nadu 625531</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-9 h-9 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm flex-shrink-0"><i class="fas fa-phone-alt text-sm"></i></div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-0.5">Phone</p>
+                            <!-- REPLACE: phone number -->
+                            <a href="tel:+919962505662" class="text-calm-dark hover:text-calm text-sm transition-colors">+91 99625 05662</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-9 h-9 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-green-600 flex-shrink-0"><i class="fab fa-whatsapp text-base"></i></div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-0.5">WhatsApp</p>
+                            <!-- REPLACE: WhatsApp number -->
+                            <a href="https://wa.me/919962505662?text=Hello%20Dr.%20Srinivasan%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" class="text-green-700 hover:text-green-600 text-sm transition-colors">Message on WhatsApp</a>
+                            <p class="text-text-muted text-xs mt-0.5">You can also send your reports for an initial assessment</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-9 h-9 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm flex-shrink-0"><i class="fas fa-clock text-sm"></i></div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-0.5">Clinic Hours</p>
+                            <!-- REPLACE: actual timings -->
+                            <div class="text-text-muted text-sm space-y-0.5">
+                                <p>Monday - Saturday: 10:00 AM - 1:00 PM, 5:00 PM - 8:00 PM</p>
+                                <p>Sunday: By appointment only</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="flex gap-2.5 pt-2">
+                        <a href="https://www.youtube.com/@Podiovascularcentre" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white border border-gray-200 hover:border-red-200 hover:bg-red-50 flex items-center justify-center text-text-muted hover:text-red-500 transition-all text-sm" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/v3_podiovascular_dgl_theni" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white border border-gray-200 hover:border-pink-200 hover:bg-pink-50 flex items-center justify-center text-text-muted hover:text-pink-500 transition-all text-sm" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <!-- REPLACE: Facebook URL -->
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white border border-gray-200 hover:border-blue-200 hover:bg-blue-50 flex items-center justify-center text-text-muted hover:text-blue-600 transition-all text-sm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="rounded-xl overflow-hidden border border-gray-200 h-72 lg:h-auto min-h-[280px] reveal reveal-d1">
+                    <!-- REPLACE: Get actual embed URL from Google Maps > Share > Embed a map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.1!2d77.476!3d10.0104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJeeva+Clinic+Theni!5e0!3m2!1sen!2sin!4v1" width="100%" height="100%" style="border:0;min-height:280px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Jeeva Clinic Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- FOOTER                                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <footer class="bg-white border-t border-gray-100 py-10">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-center sm:text-left">
+                    <p class="font-heading font-semibold text-deep text-base">Dr. Srinivasan</p>
+                    <p class="text-text-muted text-xs mt-0.5">Vascular &amp; Diabetic Foot Surgeon | Jeeva Clinic, Theni</p>
+                </div>
+                <div class="flex items-center gap-2.5">
+                    <a href="https://www.youtube.com/@Podiovascularcentre" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-red-50 flex items-center justify-center text-text-muted hover:text-red-500 transition-all text-sm" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/v3_podiovascular_dgl_theni" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-pink-50 flex items-center justify-center text-text-muted hover:text-pink-500 transition-all text-sm" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-blue-50 flex items-center justify-center text-text-muted hover:text-blue-600 transition-all text-sm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="mt-6 pt-5 border-t border-gray-100 text-center">
+                <p class="text-text-muted text-xs">&copy; 2026 Dr. Srinivasan, Jeeva Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- FLOATING WHATSAPP (no animation)        -->
+    <!-- ═══════════════════════════════════════ -->
+    <!-- REPLACE: WhatsApp number -->
+    <a href="https://wa.me/919962505662?text=Hello%20Dr.%20Srinivasan%2C%20I%20would%20like%20to%20book%20a%20consultation."
+       target="_blank" rel="noopener"
+       class="wa-float fixed bottom-6 right-6 z-40 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white text-2xl transition-colors shadow-lg"
+       aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- MOBILE BOTTOM BAR                       -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="mobile-bar">
+        <!-- REPLACE: phone -->
+        <a href="tel:+919962505662" class="flex-1 flex items-center justify-center gap-2 bg-deep text-white py-3 rounded-lg text-sm font-semibold min-h-[44px]">
+            <i class="fas fa-phone-alt text-xs"></i> Call
+        </a>
+        <!-- REPLACE: WhatsApp -->
+        <a href="https://wa.me/919962505662" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-500 text-white py-3 rounded-lg text-sm font-semibold min-h-[44px]">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SCRIPTS                                 -->
+    <!-- ═══════════════════════════════════════ -->
+    <script>
+    (function() {
+        'use strict';
+
+        // Mobile menu
+        var menuBtn = document.getElementById('menuBtn');
+        var menu = document.getElementById('mobileMenu');
+        var open = false;
+        menuBtn.addEventListener('click', function() {
+            open = !open;
+            menu.classList.toggle('hidden', !open);
+        });
+        document.querySelectorAll('.mobile-link').forEach(function(a) {
+            a.addEventListener('click', function() { open = false; menu.classList.add('hidden'); });
+        });
+
+        // Scroll reveal
+        var reveals = document.querySelectorAll('.reveal');
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+        reveals.forEach(function(el) { obs.observe(el); });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+            a.addEventListener('click', function(e) {
+                var h = this.getAttribute('href');
+                if (h === '#') return;
+                var t = document.querySelector(h);
+                if (t) { e.preventDefault(); window.scrollTo({ top: t.offsetTop - 64, behavior: 'smooth' }); }
+            });
+        });
+    })();
+
+    function toggleFaq(btn) {
+        var item = btn.closest('.faq-item');
+        var wasOpen = item.classList.contains('faq-open');
+        document.querySelectorAll('.faq-item').forEach(function(el) { el.classList.remove('faq-open'); });
+        if (!wasOpen) item.classList.add('faq-open');
+    }
+    </script>
+
+</body>
+</html>
