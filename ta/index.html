@@ -8,9 +8,9 @@
     <meta name="theme-color" content="#1a365d">
 
     <!-- Language alternates -->
-    <link rel="alternate" hreflang="en" href="/">
-    <link rel="alternate" hreflang="ta" href="/ta/">
-    <link rel="canonical" href="/ta/">
+    <link rel="alternate" hreflang="en" href="../index.html">
+    <link rel="alternate" hreflang="ta" href="ta/index.html">
+    <link rel="canonical" href="ta/index.html">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Dr. சீனிவாசன் | ரத்தநாள அறுவை சிகிச்சை நிபுணர் | தேனி">
@@ -67,7 +67,25 @@
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         html { font-size: 16px; -webkit-font-smoothing: antialiased; }
-        body { font-family: 'Noto Sans Tamil', 'DM Sans', system-ui, sans-serif; color: #1e293b; background: #ffffff; overflow-x: hidden; }
+        body { font-family: 'Noto Sans Tamil', 'DM Sans', system-ui, sans-serif; color: #1e293b; background: #ffffff; overflow-x: hidden; font-size: 14px; line-height: 1.7; }
+
+        /* Tamil text needs smaller sizes and more line-height than Latin */
+        h1 { font-size: 1.75rem !important; line-height: 1.35 !important; }
+        h2 { font-size: 1.5rem !important; line-height: 1.35 !important; }
+        h3 { font-size: 1.1rem !important; line-height: 1.4 !important; }
+        @media (min-width: 640px) {
+            h1 { font-size: 2rem !important; }
+            h2 { font-size: 1.65rem !important; }
+        }
+        @media (min-width: 1024px) {
+            h1 { font-size: 2.25rem !important; }
+            h2 { font-size: 1.85rem !important; }
+            h3 { font-size: 1.15rem !important; }
+        }
+
+        /* Tighten body text */
+        p, span, a, li, div { line-height: 1.7; }
+        .text-sm, .text-xs { line-height: 1.6; }
 
         .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
         .reveal.visible { opacity: 1; transform: none; }
@@ -105,7 +123,7 @@
         .video-card { transition: box-shadow 0.3s ease; }
         .video-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
 
-        .section-label { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+        .section-label { font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
 
         .mobile-bar { display: none; }
         @media (max-width: 768px) {
@@ -114,7 +132,7 @@
             .wa-float { bottom: 80px !important; }
         }
 
-        .quote-mark { font-family: 'Source Serif 4', Georgia, serif; font-size: 4rem; line-height: 1; color: #e2e8f0; }
+        .quote-mark { font-family: 'Source Serif 4', Georgia, serif; font-size: 3rem; line-height: 1; color: #e2e8f0; }
 
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
@@ -128,18 +146,18 @@
     <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-solid">
         <div class="max-w-5xl mx-auto px-5 sm:px-8">
             <div class="flex items-center justify-between h-16">
-                <a href="/ta/" class="font-heading font-semibold text-lg text-deep">
+                <a href="#" class="font-heading font-semibold text-base text-deep">
                     Dr. சீனிவாசன்
                 </a>
                 <div class="hidden sm:flex items-center gap-7">
-                    <a href="#about" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">குறித்து</a>
-                    <a href="#conditions" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">நோய்கள்</a>
-                    <a href="#stories" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">நோயாளி அனுபவம்</a>
-                    <a href="#contact" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">தொடர்பு</a>
-                    <a href="/" class="text-text-muted hover:text-deep text-sm font-medium transition-colors">English</a>
+                    <a href="#about" class="text-text-secondary hover:text-deep text-xs font-medium transition-colors">குறித்து</a>
+                    <a href="#conditions" class="text-text-secondary hover:text-deep text-xs font-medium transition-colors">நோய்கள்</a>
+                    <a href="#stories" class="text-text-secondary hover:text-deep text-xs font-medium transition-colors">நோயாளி அனுபவம்</a>
+                    <a href="#contact" class="text-text-secondary hover:text-deep text-xs font-medium transition-colors">தொடர்பு</a>
+                    <a href="../index.html" class="text-text-muted hover:text-deep text-xs font-medium transition-colors" style="font-family:'DM Sans',system-ui,sans-serif">English</a>
                     <a href="https://wa.me/919962505662?text=வணக்கம்%20Dr.%20Srinivasan%2C%20சிகிச்சைக்கு%20நேரம்%20கேட்க%20விரும்புகிறேன்." target="_blank"
-                       class="inline-flex items-center gap-2 bg-calm hover:bg-calm-dark text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors">
-                        <i class="fab fa-whatsapp text-base"></i> நேரம் பதிவு செய்ய
+                       class="inline-flex items-center gap-2 bg-calm hover:bg-calm-dark text-white px-4 py-1.5 rounded-lg text-xs font-semibold transition-colors">
+                        <i class="fab fa-whatsapp text-sm"></i> நேரம் பதிவு செய்ய
                     </a>
                 </div>
                 <button id="menuBtn" class="sm:hidden w-8 h-8 flex flex-col items-center justify-center gap-1.5" aria-label="பட்டியல்">
@@ -154,7 +172,7 @@
                 <a href="#conditions" class="mobile-link block py-2.5 text-text font-medium text-sm">நோய்கள்</a>
                 <a href="#stories" class="mobile-link block py-2.5 text-text font-medium text-sm">நோயாளி அனுபவம்</a>
                 <a href="#contact" class="mobile-link block py-2.5 text-text font-medium text-sm">தொடர்பு</a>
-                <a href="/" class="block py-2.5 text-calm-dark font-medium text-sm">English</a>
+                <a href="../index.html" class="block py-2.5 text-calm-dark font-medium text-sm">English</a>
                 <a href="https://wa.me/919962505662?text=வணக்கம்%20Dr.%20Srinivasan%2C%20சிகிச்சைக்கு%20நேரம்%20கேட்க%20விரும்புகிறேன்." target="_blank" class="block mt-3 text-center bg-calm text-white py-3 rounded-lg font-semibold text-sm">
                     <i class="fab fa-whatsapp mr-2"></i>நேரம் பதிவு செய்ய
                 </a>
@@ -168,8 +186,8 @@
         <div class="max-w-5xl mx-auto px-5 sm:px-8">
             <div class="grid lg:grid-cols-5 gap-10 lg:gap-14 items-center">
                 <div class="lg:col-span-3">
-                    <div class="fade-in flex flex-wrap items-center gap-2 text-text-muted text-sm mb-6">
-                        <span class="bg-white border border-gray-200 px-3 py-1 rounded-md font-medium text-text-secondary">MCh ரத்தநாள அறுவை சிகிச்சை</span>
+                    <div class="fade-in flex flex-wrap items-center gap-2 text-text-muted text-xs mb-6">
+                        <span class="bg-white border border-gray-200 px-2.5 py-0.5 rounded-md font-medium text-text-secondary text-xs">MCh ரத்தநாள அறுவை சிகிச்சை</span>
                         <span class="text-gray-300">|</span>
                         <span>15+ ஆண்டு அனுபவம்</span>
                         <span class="text-gray-300">|</span>
@@ -180,11 +198,11 @@
                         காப்பாற்ற முடிந்த ஒவ்வொரு காலும் காப்பாற்றப்பட வேண்டும்.
                     </h1>
 
-                    <p class="fade-in delay-1 text-xl sm:text-2xl mb-3 font-semibold text-calm-dark">
+                    <p class="fade-in delay-1 text-lg sm:text-xl mb-3 font-semibold text-calm-dark">
                         நாளங்கள் நலமாக்கப்படும்.
                     </p>
 
-                    <p class="fade-in delay-2 text-text-secondary text-base lg:text-lg leading-relaxed mb-8 max-w-lg">
+                    <p class="fade-in delay-2 text-text-secondary text-sm lg:text-base leading-relaxed mb-8 max-w-lg">
                         Dr. சீனிவாசன் தேனியில் உள்ள ரத்தநாள அறுவை சிகிச்சை நிபுணர். கால் வெட்டுதலைத் தவிர்த்தல், நரம்புச் சிரை (varicose veins) சிகிச்சை, நீரிழிவு கால் பாதிப்பு குணப்படுத்துதல் ஆகியவற்றில் நிபுணத்துவம் பெற்றவர். ஜீவா கிளினிக்கில் 500-க்கும் மேற்பட்ட நோயாளிகளின் கால்கள் காப்பாற்றப்பட்டுள்ளன.
                     </p>
 
@@ -232,7 +250,7 @@
                     "காப்பாற்ற முடிந்த கால்கள் வெட்டப்படுவதை நான் பார்த்திருக்கிறேன். அதனால்தான் இந்த துறையை தேர்ந்தெடுத்தேன்."
                 </h2>
 
-                <div class="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed reveal reveal-d1">
+                <div class="space-y-5 text-text-secondary text-sm lg:text-base leading-relaxed reveal reveal-d1">
                     <p>
                         Dr. சீனிவாசன் 15 ஆண்டுகளுக்கும் மேலாக தேனியில் உள்ள ஜீவா கிளினிக்கில் ரத்தநாள அறுவை சிகிச்சை செய்து வருகிறார். அவரது முக்கிய கொள்கை: <strong class="text-text">கால் வெட்டுவதற்கு முன் எல்லா சிகிச்சை வாய்ப்புகளையும் முயற்சிக்க வேண்டும்.</strong>
                     </p>
@@ -293,7 +311,7 @@
             <h2 class="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl text-deep leading-snug mb-4 reveal">
                 உங்களுக்கு அல்லது உங்கள் குடும்பத்தினருக்கு இவற்றில் ஏதேனும் உள்ளதா?
             </h2>
-            <p class="text-text-secondary text-base lg:text-lg mb-12 max-w-2xl reveal">
+            <p class="text-text-secondary text-sm lg:text-base mb-12 max-w-2xl reveal">
                 கீழ்க்கண்டவற்றில் ஏதேனும் உங்களுக்குப் பொருந்தினால், ஒரு ஆலோசனை உங்கள் சிகிச்சை வாய்ப்புகளை தெளிவுபடுத்தும். ஆரம்பத்திலேயே கண்டறிந்தால் பல நோய்கள் குணப்படுத்தக்கூடியவை.
             </p>
 
@@ -351,7 +369,7 @@
             <h2 class="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl text-deep leading-snug mb-4 reveal">
                 சிகிச்சை பெற்ற நோயாளிகளின் அனுபவங்கள்
             </h2>
-            <p class="text-text-secondary text-base lg:text-lg mb-10 max-w-2xl reveal">
+            <p class="text-text-secondary text-sm lg:text-base mb-10 max-w-2xl reveal">
                 ஜீவா கிளினிக்கில் சிகிச்சை பெற்ற நோயாளிகளின் உண்மையான அனுபவங்கள். அவர்களின் கதைகளைப் பாருங்கள்.
             </p>
 
