@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ta" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. சீனிவாசன் | ரத்தநாள &amp; நீரிழிவு கால் அறுவை சிகிச்சை நிபுணர் | ஜீவா கிளினிக், தேனி</title>
+    <meta name="description" content="Dr. சீனிவாசன் - தேனி ஜீவா கிளினிக்கில் ரத்தநாள மற்றும் நீரிழிவு கால் அறுவை சிகிச்சை நிபுணர். கால் வெட்டுதலைத் தவிர்க்க, நரம்புச் சிரை சிகிச்சை, புண் குணப்படுத்துதல்.">
+    <meta name="theme-color" content="#1a365d">
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="/">
+    <link rel="alternate" hreflang="ta" href="/ta/">
+    <link rel="canonical" href="/ta/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dr. சீனிவாசன் | ரத்தநாள அறுவை சிகிச்சை நிபுணர் | தேனி">
+    <meta property="og:description" content="நாளங்கள் நலமாக்கப்படும். ஜீவா கிளினிக், தேனி.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../doctor.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    deep:    { DEFAULT:'#1a365d', light:'#2a4a7f', lighter:'#3d5a8a' },
+                    calm:    { DEFAULT:'#0d9488', light:'#14b8a6', dark:'#0f766e', subtle:'#f0fdfa' },
+                    warm:    { DEFAULT:'#b45309', light:'#d97706' },
+                    sand:    { DEFAULT:'#faf8f5', dark:'#f0ece4' },
+                    text:    { DEFAULT:'#1e293b', secondary:'#475569', muted:'#64748b' },
+                },
+                fontFamily: {
+                    heading: ['"Noto Sans Tamil"', '"Source Serif 4"', 'Georgia', 'serif'],
+                    body:    ['"Noto Sans Tamil"', '"DM Sans"', 'system-ui', 'sans-serif'],
+                },
+            }
+        }
+    }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Physician",
+        "name": "Dr. Srinivasan",
+        "description": "ரத்தநாள மற்றும் நீரிழிவு கால் அறுவை சிகிச்சை நிபுணர், ஜீவா கிளினிக், தேனி",
+        "medicalSpecialty": "Vascular Surgery",
+        "address": { "@type": "PostalAddress", "streetAddress": "எடமால் தெரு, நாடார் சரஸ்வதி பள்ளி எதிரில்", "addressLocality": "தேனி", "addressRegion": "தமிழ்நாடு", "postalCode": "625531", "addressCountry": "IN" },
+        "sameAs": [
+            "https://www.youtube.com/@Podiovascularcentre",
+            "https://www.instagram.com/v3_podiovascular_dgl_theni"
+        ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+        body { font-family: 'Noto Sans Tamil', 'DM Sans', system-ui, sans-serif; color: #1e293b; background: #ffffff; overflow-x: hidden; }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal.visible { opacity: 1; transform: none; }
+        .reveal-d1 { transition-delay: 0.1s; }
+        .reveal-d2 { transition-delay: 0.2s; }
+        .reveal-d3 { transition-delay: 0.3s; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(16px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in { opacity: 0; animation: fadeIn 0.7s ease forwards; }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.35s; }
+        .delay-4 { animation-delay: 0.5s; }
+
+        .nav-solid { background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(0,0,0,0.06); }
+
+        .hero-bg { background: linear-gradient(170deg, #ffffff 0%, #f0f7ff 40%, #f0fdfa 70%, #faf8f5 100%); position: relative; }
+        .hero-bg::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(26,54,93,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(26,54,93,0.025) 1px, transparent 1px); background-size: 64px 64px; pointer-events: none; }
+
+        .condition-card { transition: box-shadow 0.3s ease; }
+        .condition-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+
+        .h-scroll { display: flex; gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; padding-bottom: 0.5rem; }
+        .h-scroll::-webkit-scrollbar { display: none; }
+        .h-scroll > * { scroll-snap-align: start; flex-shrink: 0; }
+
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-open .faq-answer { max-height: 300px; }
+        .faq-open .faq-icon { transform: rotate(45deg); }
+        .faq-icon { transition: transform 0.3s ease; }
+
+        .video-card { transition: box-shadow 0.3s ease; }
+        .video-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+
+        .section-label { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+
+        .mobile-bar { display: none; }
+        @media (max-width: 768px) {
+            .mobile-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; background: #fff; box-shadow: 0 -1px 12px rgba(0,0,0,0.08); padding: 0.5rem 0.75rem max(0.5rem, env(safe-area-inset-bottom)); gap: 0.5rem; }
+            body { padding-bottom: 68px; }
+            .wa-float { bottom: 80px !important; }
+        }
+
+        .quote-mark { font-family: 'Source Serif 4', Georgia, serif; font-size: 4rem; line-height: 1; color: #e2e8f0; }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+        }
+    </style>
+</head>
+
+<body class="font-body">
+
+    <!-- NAV -->
+    <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-solid">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/ta/" class="font-heading font-semibold text-lg text-deep">
+                    Dr. சீனிவாசன்
+                </a>
+                <div class="hidden sm:flex items-center gap-7">
+                    <a href="#about" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">குறித்து</a>
+                    <a href="#conditions" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">நோய்கள்</a>
+                    <a href="#stories" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">நோயாளி அனுபவம்</a>
+                    <a href="#contact" class="text-text-secondary hover:text-deep text-sm font-medium transition-colors">தொடர்பு</a>
+                    <a href="/" class="text-text-muted hover:text-deep text-sm font-medium transition-colors">English</a>
+                    <a href="https://wa.me/919962505662?text=வணக்கம்%20Dr.%20Srinivasan%2C%20சிகிச்சைக்கு%20நேரம்%20கேட்க%20விரும்புகிறேன்." target="_blank"
+                       class="inline-flex items-center gap-2 bg-calm hover:bg-calm-dark text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors">
+                        <i class="fab fa-whatsapp text-base"></i> நேரம் பதிவு செய்ய
+                    </a>
+                </div>
+                <button id="menuBtn" class="sm:hidden w-8 h-8 flex flex-col items-center justify-center gap-1.5" aria-label="பட்டியல்">
+                    <span class="w-5 h-0.5 bg-deep rounded-full"></span>
+                    <span class="w-5 h-0.5 bg-deep rounded-full"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="sm:hidden hidden bg-white border-t border-gray-100">
+            <div class="px-5 py-4 space-y-1">
+                <a href="#about" class="mobile-link block py-2.5 text-text font-medium text-sm">குறித்து</a>
+                <a href="#conditions" class="mobile-link block py-2.5 text-text font-medium text-sm">நோய்கள்</a>
+                <a href="#stories" class="mobile-link block py-2.5 text-text font-medium text-sm">நோயாளி அனுபவம்</a>
+                <a href="#contact" class="mobile-link block py-2.5 text-text font-medium text-sm">தொடர்பு</a>
+                <a href="/" class="block py-2.5 text-calm-dark font-medium text-sm">English</a>
+                <a href="https://wa.me/919962505662?text=வணக்கம்%20Dr.%20Srinivasan%2C%20சிகிச்சைக்கு%20நேரம்%20கேட்க%20விரும்புகிறேன்." target="_blank" class="block mt-3 text-center bg-calm text-white py-3 rounded-lg font-semibold text-sm">
+                    <i class="fab fa-whatsapp mr-2"></i>நேரம் பதிவு செய்ய
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero-bg pt-24 pb-16 lg:pt-28 lg:pb-24">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="grid lg:grid-cols-5 gap-10 lg:gap-14 items-center">
+                <div class="lg:col-span-3">
+                    <div class="fade-in flex flex-wrap items-center gap-2 text-text-muted text-sm mb-6">
+                        <span class="bg-white border border-gray-200 px-3 py-1 rounded-md font-medium text-text-secondary">MCh ரத்தநாள அறுவை சிகிச்சை</span>
+                        <span class="text-gray-300">|</span>
+                        <span>15+ ஆண்டு அனுபவம்</span>
+                        <span class="text-gray-300">|</span>
+                        <span>ஜீவா கிளினிக், தேனி</span>
+                    </div>
+
+                    <h1 class="fade-in delay-1 font-heading font-semibold text-3xl sm:text-4xl lg:text-[2.75rem] text-deep leading-snug mb-5">
+                        காப்பாற்ற முடிந்த ஒவ்வொரு காலும் காப்பாற்றப்பட வேண்டும்.
+                    </h1>
+
+                    <p class="fade-in delay-1 text-xl sm:text-2xl mb-3 font-semibold text-calm-dark">
+                        நாளங்கள் நலமாக்கப்படும்.
+                    </p>
+
+                    <p class="fade-in delay-2 text-text-secondary text-base lg:text-lg leading-relaxed mb-8 max-w-lg">
+                        Dr. சீனிவாசன் தேனியில் உள்ள ரத்தநாள அறுவை சிகிச்சை நிபுணர். கால் வெட்டுதலைத் தவிர்த்தல், நரம்புச் சிரை (varicose veins) சிகிச்சை, நீரிழிவு கால் பாதிப்பு குணப்படுத்துதல் ஆகியவற்றில் நிபுணத்துவம் பெற்றவர். ஜீவா கிளினிக்கில் 500-க்கும் மேற்பட்ட நோயாளிகளின் கால்கள் காப்பாற்றப்பட்டுள்ளன.
+                    </p>
+
+                    <div class="fade-in delay-3 flex flex-wrap gap-3 mb-8">
+                        <a href="https://wa.me/919962505662?text=வணக்கம்%20Dr.%20Srinivasan%2C%20சிகிச்சைக்கு%20நேரம்%20கேட்க%20விரும்புகிறேன்." target="_blank"
+                           class="inline-flex items-center gap-2.5 bg-calm hover:bg-calm-dark text-white px-6 py-3 rounded-lg font-semibold text-sm transition-colors">
+                            <i class="fab fa-whatsapp text-lg"></i> WhatsApp-ல் நேரம் பதிவு
+                        </a>
+                        <a href="tel:+919962505662"
+                           class="inline-flex items-center gap-2 border border-gray-300 hover:border-deep text-text px-6 py-3 rounded-lg font-semibold text-sm transition-colors">
+                            <i class="fas fa-phone-alt text-xs text-text-muted"></i> அழைக்கவும்
+                        </a>
+                    </div>
+
+                    <div class="fade-in delay-4 flex items-center gap-3">
+                        <a href="https://www.youtube.com/@Podiovascularcentre" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-red-50 flex items-center justify-center text-text-muted hover:text-red-500 transition-all text-sm" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/v3_podiovascular_dgl_theni" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-pink-50 flex items-center justify-center text-text-muted hover:text-pink-500 transition-all text-sm" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-blue-50 flex items-center justify-center text-text-muted hover:text-blue-600 transition-all text-sm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 fade-in delay-3">
+                    <div class="relative max-w-xs mx-auto lg:max-w-none">
+                        <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
+                            <img src="../doctor.png" alt="Dr. சீனிவாசன் - ரத்தநாள மற்றும் நீரிழிவு கால் அறுவை சிகிச்சை நிபுணர், தேனி" class="w-full h-full object-cover object-center" loading="eager">
+                        </div>
+                        <div class="absolute -bottom-4 left-3 right-3 bg-white rounded-xl px-4 py-3 shadow-md border border-gray-100">
+                            <p class="text-deep font-heading font-semibold text-sm">Dr. சீனிவாசன்</p>
+                            <p class="text-text-muted text-xs">ரத்தநாள &amp; நீரிழிவு கால் அறுவை சிகிச்சை நிபுணர்</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 lg:py-24 bg-white border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="max-w-3xl">
+                <p class="section-label text-calm-dark mb-4 reveal">Dr. சீனிவாசன் குறித்து</p>
+
+                <h2 class="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl text-deep leading-snug mb-6 reveal">
+                    "காப்பாற்ற முடிந்த கால்கள் வெட்டப்படுவதை நான் பார்த்திருக்கிறேன். அதனால்தான் இந்த துறையை தேர்ந்தெடுத்தேன்."
+                </h2>
+
+                <div class="space-y-5 text-text-secondary text-base lg:text-lg leading-relaxed reveal reveal-d1">
+                    <p>
+                        Dr. சீனிவாசன் 15 ஆண்டுகளுக்கும் மேலாக தேனியில் உள்ள ஜீவா கிளினிக்கில் ரத்தநாள அறுவை சிகிச்சை செய்து வருகிறார். அவரது முக்கிய கொள்கை: <strong class="text-text">கால் வெட்டுவதற்கு முன் எல்லா சிகிச்சை வாய்ப்புகளையும் முயற்சிக்க வேண்டும்.</strong>
+                    </p>
+                    <p>
+                        பல நோயாளிகள் மற்ற மருத்துவமனைகளில் கால் வெட்ட வேண்டும் என்று சொல்லப்பட்ட பிறகு இங்கு வருகிறார்கள். இவர்களில் பலருக்கு ரத்தநாள அறுவை சிகிச்சை, ஆஞ்சியோபிளாஸ்டி அல்லது சரியான புண் மேலாண்மை மூலம் கால் காப்பாற்றப்பட்டுள்ளது.
+                    </p>
+                    <p>
+                        நீரிழிவு கால் பாதிப்பு, நரம்புச் சிரை (varicose veins), புற தமனி நோய் (Peripheral Arterial Disease), ஆழ்நரம்பு இரத்த உறைவு (DVT), குணமாகாத புண்கள் ஆகியவற்றுக்கு சிகிச்சை அளிக்கிறார். ஒவ்வொரு நோயாளிக்கும் அவர்களின் நிலையையும் சிகிச்சை விருப்பங்களையும் தெளிவாக விளக்குவார்.
+                    </p>
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-gray-100 reveal reveal-d2">
+                    <h3 class="font-heading font-semibold text-lg text-deep mb-4">பயிற்சி &amp; தகுதிகள்</h3>
+                    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm text-text-secondary">
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-graduation-cap text-calm mt-0.5 text-xs"></i>
+                            <span>MBBS</span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-graduation-cap text-calm mt-0.5 text-xs"></i>
+                            <span>MS பொது அறுவை சிகிச்சை</span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-graduation-cap text-calm mt-0.5 text-xs"></i>
+                            <span>MCh ரத்தநாள அறுவை சிகிச்சை</span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-certificate text-calm mt-0.5 text-xs"></i>
+                            <span>Vascular Society of India உறுப்பினர்</span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-certificate text-calm mt-0.5 text-xs"></i>
+                            <span>எண்டோவாஸ்குலர் (Endovascular) சிகிச்சை பயிற்சி</span>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <i class="fas fa-language text-calm mt-0.5 text-xs"></i>
+                            <span>மொழிகள்: தமிழ், ஆங்கிலம், இந்தி</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-calm-subtle rounded-xl p-6 border border-calm/10 reveal reveal-d3">
+                    <p class="text-text-secondary text-sm leading-relaxed">
+                        <strong class="text-text">15+ ஆண்டுகள்</strong> அனுபவம்.
+                        <strong class="text-text">500-க்கும் மேற்பட்ட கால்கள்</strong> வெட்டுதலிலிருந்து காப்பாற்றப்பட்டவை.
+                        தேனி, மதுரை, திண்டுக்கல் மற்றும் சுற்றுப்புற மாவட்டங்களைச் சேர்ந்த <strong class="text-text">5,000-க்கும் மேற்பட்ட நோயாளிகள்</strong> நம்பிக்கை வைத்துள்ளனர்.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONDITIONS -->
+    <section id="conditions" class="py-16 lg:py-24 bg-sand">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <p class="section-label text-calm-dark mb-4 reveal">சிகிச்சை அளிக்கப்படும் நோய்கள்</p>
+            <h2 class="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl text-deep leading-snug mb-4 reveal">
+                உங்களுக்கு அல்லது உங்கள் குடும்பத்தினருக்கு இவற்றில் ஏதேனும் உள்ளதா?
+            </h2>
+            <p class="text-text-secondary text-base lg:text-lg mb-12 max-w-2xl reveal">
+                கீழ்க்கண்டவற்றில் ஏதேனும் உங்களுக்குப் பொருந்தினால், ஒரு ஆலோசனை உங்கள் சிகிச்சை வாய்ப்புகளை தெளிவுபடுத்தும். ஆரம்பத்திலேயே கண்டறிந்தால் பல நோய்கள் குணப்படுத்தக்கூடியவை.
+            </p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="condition-card reveal bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-teal-50 text-calm flex items-center justify-center mb-4"><i class="fas fa-shoe-prints text-sm"></i></div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">நீரிழிவு கால் பாதிப்பு</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">குணமாகாத புண்கள், கருப்பாகும் விரல்கள், உணர்வின்மை அல்லது கால்களில் தொற்று. நீரிழிவு நோய் இருந்தால் கால்களில் ஏதேனும் மாற்றம் தெரிந்தால் உடனடி சிகிச்சை முக்கியம்.</p>
+                    <p class="text-calm-dark text-xs font-medium">பொதுவாக: 50 வயதுக்கு மேற்பட்ட நீரிழிவு நோயாளிகள்</p>
+                </div>
+
+                <div class="condition-card reveal reveal-d1 bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center mb-4"><i class="fas fa-wave-square text-sm"></i></div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">நரம்புச் சிரை (Varicose Veins)</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">கால்களில் வீங்கிய, முறுக்கிய நரம்புகள் தோலின் கீழ் தெரிவது, வலி, கனமான உணர்வு அல்லது அரிப்பு. நவீன சிகிச்சைகள் குறைந்தபட்ச ஊடுருவலுடன் விரைவான குணமாக்கலை வழங்குகின்றன.</p>
+                    <p class="text-calm-dark text-xs font-medium">சிகிச்சை: லேசர், ஸ்க்லீரோதெரபி, RF அபிலேஷன்</p>
+                </div>
+
+                <div class="condition-card reveal reveal-d2 bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-rose-50 text-rose-600 flex items-center justify-center mb-4"><i class="fas fa-heart-pulse text-sm"></i></div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">நடக்கும்போது கால் வலி</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">நடக்கும்போது கால்களில் வலி, பிடிப்பு அல்லது சோர்வு, ஓய்வெடுக்கும்போது குறைவது. இது புற தமனி நோயின் (கால்களில் அடைபட்ட தமனிகள்) அறிகுறியாக இருக்கலாம்.</p>
+                    <p class="text-calm-dark text-xs font-medium">கண்டறிதல்: டாப்ளர் அல்ட்ராசவுண்ட், ABI பரிசோதனை</p>
+                </div>
+
+                <div class="condition-card reveal bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center mb-4"><i class="fas fa-bandage text-sm"></i></div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">குணமாகாத புண்கள்</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">சிகிச்சை செய்தும் வாரங்கள் அல்லது மாதங்களாக குணமாகாத கால் அல்லது பாத புண்கள். மோசமான இரத்த ஓட்டம் பெரும்பாலும் அடிப்படை காரணமாக இருக்கும்.</p>
+                    <p class="text-calm-dark text-xs font-medium">தொடர்பு: நீரிழிவு, தமனி நோய்</p>
+                </div>
+
+                <div class="condition-card reveal reveal-d1 bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4"><i class="fas fa-hand-holding-medical text-sm"></i></div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">கால் வெட்ட சொன்னார்களா?</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">வேறொரு மருத்துவர் கால் வெட்ட வேண்டும் என்று பரிந்துரைத்திருந்தால், இரண்டாவது கருத்து பெறுவது நல்லது. பல சூழ்நிலைகளில் ரத்தநாள அறுவை சிகிச்சை மூலம் இரத்த ஓட்டத்தை மீட்டு காலைக் காப்பாற்ற முடியும்.</p>
+                    <p class="text-calm-dark text-xs font-medium">முதலில்: ரத்தநாள அறுவை சிகிச்சை நிபுணரின் மதிப்பீடு</p>
+                </div>
+
+                <div class="condition-card reveal reveal-d2 bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="w-10 h-10 rounded-lg bg-violet-50 text-violet-600 flex items-center justify-center mb-4"><i class="fas fa-stethoscope text-sm"></i></div>
+                    <h3 class="font-heading font-semibold text-base text-deep mb-2">வீங்கிய அல்லது நிறமாற்றமான கால்கள்</h3>
+                    <p class="text-text-muted text-sm leading-relaxed mb-3">தொடர்ந்து வீங்குதல், தோல் நிறமாற்றம் அல்லது கால்களில் கனமான உணர்வு ஆழ்நரம்பு இரத்த உறைவு (DVT) அல்லது நீண்டகால நரம்பு செயலிழப்பைக் குறிக்கலாம்.</p>
+                    <p class="text-calm-dark text-xs font-medium">பரிசோதனை: டாப்ளர் அல்ட்ராசவுண்ட்</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PATIENT STORIES -->
+    <section id="stories" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <p class="section-label text-calm-dark mb-4 reveal">நோயாளி அனுபவங்கள்</p>
+            <h2 class="font-heading font-semibold text-2xl sm:text-3xl lg:text-4xl text-deep leading-snug mb-4 reveal">
+                சிகிச்சை பெற்ற நோயாளிகளின் அனுபவங்கள்
+            </h2>
+            <p class="text-text-secondary text-base lg:text-lg mb-10 max-w-2xl reveal">
+                ஜீவா கிளினிக்கில் சிகிச்சை பெற்ற நோயாளிகளின் உண்மையான அனுபவங்கள். அவர்களின் கதைகளைப் பாருங்கள்.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6 reveal">
+                <div class="video-card rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <iframe class="w-full h-full" src="about:blank" data-src="" title="நோயாளி கதை 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-300"><i class="fab fa-youtube text-4xl"></i></div>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-text text-sm">நோயாளி குணமாதல்</p>
+                        <p class="text-text-muted text-xs mt-0.5">நீரிழிவு கால் சிகிச்சை</p>
+                    </div>
+                </div>
+                <div class="video-card rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <iframe class="w-full h-full" src="about:blank" data-src="" title="நோயாளி கதை 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-300"><i class="fab fa-youtube text-4xl"></i></div>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-text text-sm">நரம்புச் சிரை சிகிச்சை</p>
+                        <p class="text-text-muted text-xs mt-0.5">முன்னும் பின்னும்</p>
+                    </div>
+                </div>
+                <div class="video-card rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <iframe class="w-full h-full" src="about:blank" data-src="" title="நோயாளி கதை 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-300"><i class="fab fa-youtube text-4xl"></i></div>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-text text-sm">கால் காப்பாற்றப்பட்டது</p>
+                        <p class="text-text-muted text-xs mt-0.5">ரத்தநாள மறுசீரமைப்பு</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 mb-14 reveal">
+                <a href="https://www.youtube.com/@Podiovascularcentre" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-calm-dark hover:text-calm font-medium text-sm transition-colors">
+                    <i class="fab fa-youtube"></i> YouTube-ல் மேலும் வீடியோக்கள் <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+                <a href="#" class="inline-flex items-center gap-2 text-text-muted hover:text-text font-medium text-sm transition-colors">
+                    <i class="fab fa-google"></i> Google-ல் விமர்சனங்கள் படிக்க <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <h3 class="font-heading font-semibold text-lg text-deep mb-5 reveal">நோயாளிகள் சொல்வது</h3>
+            <div class="h-scroll reveal">
+                <div class="w-80 sm:w-96 bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="quote-mark mb-2">&ldquo;</div>
+                    <p class="text-text-secondary text-sm leading-relaxed mb-5 -mt-6">இரண்டு மருத்துவமனைகளில் கால் வெட்ட வேண்டும் என்று சொன்னார்கள். ஒரு உறவினர் Dr. சீனிவாசனைப் பற்றி சொன்னார். அவர் என்னை நன்றாக பரிசோதித்து, ரத்தநாள சிகிச்சை செய்து என் காலைக் காப்பாற்றினார். இப்போது நான் தினமும் கோவிலுக்கு நடந்து செல்கிறேன்.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-calm/10 text-calm-dark font-semibold text-xs flex items-center justify-center">ர</div>
+                        <div><p class="font-semibold text-text text-sm">ராஜேஷ்</p><p class="text-text-muted text-xs">நீரிழிவு கால் நோயாளி, தேனி</p></div>
+                    </div>
+                </div>
+                <div class="w-80 sm:w-96 bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="quote-mark mb-2">&ldquo;</div>
+                    <p class="text-text-secondary text-sm leading-relaxed mb-5 -mt-6">என் நரம்புச் சிரை மூன்று வருடமாக வலிக்கிறது. அறுவை சிகிச்சை என்றால் பயமாக இருந்தது. டாக்டர் லேசர் மூலம் செய்வோம், அன்றே வீட்டுக்கு போகலாம் என்றார். இப்போது வலியே இல்லை.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs flex items-center justify-center">செ</div>
+                        <div><p class="font-semibold text-text text-sm">செல்வி</p><p class="text-text-muted text-xs">நரம்புச் சிரை நோயாளி, மதுரை</p></div>
+                    </div>
+                </div>
+                <div class="w-80 sm:w-96 bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="quote-mark mb-2">&ldquo;</div>
+                    <p class="text-text-secondary text-sm leading-relaxed mb-5 -mt-6">என் அப்பாவுக்கு ஆறு மாதமாக காலில் புண் குணமாகவில்லை. எங்கள் ஊர் டாக்டர்களுக்கு என்ன செய்வது என்று தெரியவில்லை. Dr. சீனிவாசன் இரத்த ஓட்ட பிரச்சனையை கண்டுபிடித்து சிகிச்சை செய்தார். இரண்டு மாதத்தில் புண் முழுமையாக குணமானது.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 font-semibold text-xs flex items-center justify-center">கு</div>
+                        <div><p class="font-semibold text-text text-sm">குமார்</p><p class="text-text-muted text-xs">நோயாளியின் மகன், திண்டுக்கல்</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FIRST VISIT -->
+    <section class="py-16 lg:py-24 bg-sand">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="max-w-3xl">
+                <p class="section-label text-calm-dark mb-4 reveal">முதல் வருகை</p>
+                <h2 class="font-heading font-semibold text-2xl sm:text-3xl text-deep leading-snug mb-6 reveal">
+                    ஜீவா கிளினிக்குக்கு வரும்போது என்ன எதிர்பார்க்கலாம்
+                </h2>
+
+                <div class="space-y-6 reveal reveal-d1">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm-dark font-heading font-semibold text-sm flex-shrink-0 mt-0.5">1</div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-1">நேரம் பதிவு செய்யுங்கள்</p>
+                            <p class="text-text-muted text-sm leading-relaxed">கிளினிக்கை அழைக்கவும் அல்லது WhatsApp செய்தி அனுப்பவும். உங்கள் விருப்பமான தேதி மற்றும் நேரத்தை உறுதிப்படுத்துவோம்.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm-dark font-heading font-semibold text-sm flex-shrink-0 mt-0.5">2</div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-1">மருத்துவ பதிவுகளைக் கொண்டு வாருங்கள்</p>
+                            <p class="text-text-muted text-sm leading-relaxed">முந்தைய பரிசோதனை முடிவுகள், மருந்து சீட்டுகள் அல்லது ஸ்கேன் இருந்தால் கொண்டு வாருங்கள். இது மருத்துவருக்கு உங்கள் வரலாற்றை விரைவாகப் புரிந்துகொள்ள உதவும்.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm-dark font-heading font-semibold text-sm flex-shrink-0 mt-0.5">3</div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-1">ஆலோசனை மற்றும் பரிசோதனை</p>
+                            <p class="text-text-muted text-sm leading-relaxed">Dr. சீனிவாசன் உங்களை பரிசோதிப்பார், தேவைப்பட்டால் டாப்ளர் அல்ட்ராசவுண்ட் செய்வார், கண்டுபிடிப்புகளையும் சிகிச்சை விருப்பங்களையும் தெளிவாக விளக்குவார்.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm-dark font-heading font-semibold text-sm flex-shrink-0 mt-0.5">4</div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-1">தெளிவான சிகிச்சை திட்டம்</p>
+                            <p class="text-text-muted text-sm leading-relaxed">உங்கள் நிலை, பரிந்துரைக்கப்படும் சிகிச்சை, எதிர்பார்க்கப்படும் காலம் மற்றும் செலவு ஆகியவற்றை தெளிவாகப் புரிந்துகொண்டு செல்வீர்கள். எந்த அழுத்தமும் இல்லை.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex flex-wrap gap-2 text-xs text-text-muted reveal reveal-d2">
+                    <span class="bg-white border border-gray-200 px-2.5 py-1 rounded-md">ரொக்கம்</span>
+                    <span class="bg-white border border-gray-200 px-2.5 py-1 rounded-md">UPI (GPay, PhonePe)</span>
+                    <span class="bg-white border border-gray-200 px-2.5 py-1 rounded-md">டெபிட்/கிரெடிட் கார்டு</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-2xl mx-auto px-5 sm:px-8">
+            <p class="section-label text-calm-dark mb-4 reveal">அடிக்கடி கேட்கப்படும் கேள்விகள்</p>
+            <h2 class="font-heading font-semibold text-2xl sm:text-3xl text-deep leading-snug mb-8 reveal">
+                நோயாளிகள் பொதுவாகக் கேட்கும் கேள்விகள்
+            </h2>
+
+            <div class="space-y-3 reveal">
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">நீரிழிவு கால் என்றால் என்ன? ஏன் ஆபத்தானது?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">நீரிழிவு நோய் கால்களில் உள்ள நரம்புகள் மற்றும் ரத்தநாளங்களை சேதப்படுத்தும். இது உணர்வின்மை, புண்கள் மற்றும் தொற்றுக்கு வழிவகுக்கும். சரியான இரத்த ஓட்டம் இல்லாமல் புண்கள் குணமாகாது, இது குடலழற்சிக்கு வழிவகுக்கலாம். ஆரம்பகால ரத்தநாள மதிப்பீடு மற்றும் சிகிச்சை இந்த பிரச்சனைகளைத் தடுத்து காலைக் காப்பாற்ற முடியும்.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">நரம்புச் சிரையை (varicose veins) திறந்த அறுவை சிகிச்சை இல்லாமல் சிகிச்சை செய்ய முடியுமா?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">ஆம். லேசர் அபிலேஷன், ரேடியோஃப்ரீக்வென்சி அபிலேஷன், ஸ்க்லீரோதெரபி போன்ற நவீன சிகிச்சைகள் குறைந்தபட்ச ஊடுருவல் கொண்டவை. பெரும்பாலான நோயாளிகள் அன்றே வீட்டுக்குச் செல்லலாம். ஆலோசனையின்போது நிலையின் தீவிரத்தை மதிப்பிட்டு சிறந்த அணுகுமுறையை தேர்ந்தெடுப்போம்.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">கால் வெட்டுவதைத் தவிர்க்க முடியுமா?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">பல சூழ்நிலைகளில், ஆம். ஆஞ்சியோபிளாஸ்டி, ஸ்டென்டிங் அல்லது பைபாஸ் அறுவை சிகிச்சை மூலம் பாதிக்கப்பட்ட காலுக்கு இரத்த ஓட்டத்தை மீட்க முடிந்தால், திசு குணமாகும். ரத்தநாள அறுவை சிகிச்சை நிபுணரிடம் ஆரம்பகால ஆலோசனை மிக முக்கியம். எவ்வளவு சீக்கிரம் இரத்த ஓட்டம் மதிப்பீடு செய்யப்படுகிறதோ, காலைக் காப்பாற்றும் வாய்ப்பு அவ்வளவு அதிகம்.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">நான் தேனியிலிருந்து தொலைவில் இருக்கிறேன். ஆலோசனைக்கு வருவது மதிப்புக்குரியதா?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">மதுரை, திண்டுக்கல், கம்பம் மற்றும் பிற மாவட்டங்களிலிருந்து பல நோயாளிகள் சிகிச்சைக்கு வருகிறார்கள். சிக்கலான நிகழ்வுகளில் ரத்தநாள அறுவை சிகிச்சை நிபுணரின் மதிப்பீடு முடிவுகளில் குறிப்பிடத்தக்க மாற்றத்தை ஏற்படுத்தும். வருகைக்கு முன் ஆரம்ப மதிப்பீட்டிற்காக WhatsApp மூலம் உங்கள் அறிக்கைகளை அனுப்பலாம்.</p>
+                    </div>
+                </div>
+                <div class="faq-item border border-gray-100 rounded-xl overflow-hidden">
+                    <button class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-text text-sm pr-4">முதல் சந்திப்புக்கு என்ன கொண்டு வர வேண்டும்?</span>
+                        <span class="faq-icon text-calm text-lg font-light flex-shrink-0">+</span>
+                    </button>
+                    <div class="faq-answer px-5 text-text-secondary text-sm leading-relaxed">
+                        <p class="pb-4">முந்தைய மருத்துவ அறிக்கைகள், இரத்தப் பரிசோதனை முடிவுகள், ஸ்கேன்கள் மற்றும் நீங்கள் தற்போது எடுத்துக்கொள்ளும் மருந்துகளின் பட்டியல் கொண்டு வாருங்கள். நீரிழிவு இருந்தால் சமீபத்திய HbA1c மற்றும் சர்க்கரை அளவு அறிக்கைகளைக் கொண்டு வாருங்கள்.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16 lg:py-24 bg-sand border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <p class="section-label text-calm-dark mb-4 reveal">தொடர்பு</p>
+            <h2 class="font-heading font-semibold text-2xl sm:text-3xl text-deep leading-snug mb-10 reveal">ஜீவா கிளினிக், தேனி</h2>
+
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
+                <div class="space-y-6 reveal">
+                    <div class="flex items-start gap-4">
+                        <div class="w-9 h-9 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm flex-shrink-0"><i class="fas fa-map-marker-alt text-sm"></i></div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-0.5">முகவரி</p>
+                            <p class="text-text-muted text-sm leading-relaxed">எடமால் தெரு, நாடார் சரஸ்வதி பள்ளி எதிரில்,<br>தேனி, தமிழ்நாடு 625531</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-9 h-9 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm flex-shrink-0"><i class="fas fa-phone-alt text-sm"></i></div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-0.5">தொலைபேசி</p>
+                            <a href="tel:+919962505662" class="text-calm-dark hover:text-calm text-sm transition-colors">+91 99625 05662</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-9 h-9 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-green-600 flex-shrink-0"><i class="fab fa-whatsapp text-base"></i></div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-0.5">WhatsApp</p>
+                            <a href="https://wa.me/919962505662?text=வணக்கம்%20Dr.%20Srinivasan%2C%20சிகிச்சைக்கு%20நேரம்%20கேட்க%20விரும்புகிறேன்." target="_blank" class="text-green-700 hover:text-green-600 text-sm transition-colors">WhatsApp-ல் செய்தி அனுப்புங்கள்</a>
+                            <p class="text-text-muted text-xs mt-0.5">ஆரம்ப மதிப்பீட்டிற்கு உங்கள் அறிக்கைகளையும் அனுப்பலாம்</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-9 h-9 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-calm flex-shrink-0"><i class="fas fa-clock text-sm"></i></div>
+                        <div>
+                            <p class="font-semibold text-text text-sm mb-0.5">கிளினிக் நேரம்</p>
+                            <div class="text-text-muted text-sm space-y-0.5">
+                                <p>திங்கள் - சனி: காலை 10 - மதியம் 1, மாலை 5 - இரவு 8</p>
+                                <p>ஞாயிறு: முன்பதிவு மூலம் மட்டும்</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2.5 pt-2">
+                        <a href="https://www.youtube.com/@Podiovascularcentre" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white border border-gray-200 hover:border-red-200 hover:bg-red-50 flex items-center justify-center text-text-muted hover:text-red-500 transition-all text-sm" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/v3_podiovascular_dgl_theni" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white border border-gray-200 hover:border-pink-200 hover:bg-pink-50 flex items-center justify-center text-text-muted hover:text-pink-500 transition-all text-sm" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white border border-gray-200 hover:border-blue-200 hover:bg-blue-50 flex items-center justify-center text-text-muted hover:text-blue-600 transition-all text-sm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden border border-gray-200 h-72 lg:h-auto min-h-[280px] reveal reveal-d1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.1!2d77.476!3d10.0104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJeeva+Clinic+Theni!5e0!3m2!1sen!2sin!4v1" width="100%" height="100%" style="border:0;min-height:280px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ஜீவா கிளினிக் இடம்"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-100 py-10">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-center sm:text-left">
+                    <p class="font-heading font-semibold text-deep text-base">Dr. சீனிவாசன்</p>
+                    <p class="text-text-muted text-xs mt-0.5">ரத்தநாள &amp; நீரிழிவு கால் அறுவை சிகிச்சை நிபுணர் | ஜீவா கிளினிக், தேனி</p>
+                </div>
+                <div class="flex items-center gap-2.5">
+                    <a href="https://www.youtube.com/@Podiovascularcentre" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-red-50 flex items-center justify-center text-text-muted hover:text-red-500 transition-all text-sm" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/v3_podiovascular_dgl_theni" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-pink-50 flex items-center justify-center text-text-muted hover:text-pink-500 transition-all text-sm" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="w-8 h-8 rounded-md bg-gray-100 hover:bg-blue-50 flex items-center justify-center text-text-muted hover:text-blue-600 transition-all text-sm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="mt-6 pt-5 border-t border-gray-100 text-center">
+                <p class="text-text-muted text-xs">&copy; 2026 Dr. சீனிவாசன், ஜீவா கிளினிக். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/919962505662?text=வணக்கம்%20Dr.%20Srinivasan%2C%20சிகிச்சைக்கு%20நேரம்%20கேட்க%20விரும்புகிறேன்."
+       target="_blank" rel="noopener"
+       class="wa-float fixed bottom-6 right-6 z-40 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white text-2xl transition-colors shadow-lg"
+       aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- MOBILE BOTTOM BAR -->
+    <div class="mobile-bar">
+        <a href="tel:+919962505662" class="flex-1 flex items-center justify-center gap-2 bg-deep text-white py-3 rounded-lg text-sm font-semibold min-h-[44px]">
+            <i class="fas fa-phone-alt text-xs"></i> அழைக்க
+        </a>
+        <a href="https://wa.me/919962505662" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-500 text-white py-3 rounded-lg text-sm font-semibold min-h-[44px]">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+    (function() {
+        'use strict';
+        var menuBtn = document.getElementById('menuBtn');
+        var menu = document.getElementById('mobileMenu');
+        var open = false;
+        menuBtn.addEventListener('click', function() { open = !open; menu.classList.toggle('hidden', !open); });
+        document.querySelectorAll('.mobile-link').forEach(function(a) { a.addEventListener('click', function() { open = false; menu.classList.add('hidden'); }); });
+
+        var reveals = document.querySelectorAll('.reveal');
+        var obs = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+        }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+        reveals.forEach(function(el) { obs.observe(el); });
+
+        document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+            a.addEventListener('click', function(e) {
+                var h = this.getAttribute('href'); if (h === '#') return;
+                var t = document.querySelector(h);
+                if (t) { e.preventDefault(); window.scrollTo({ top: t.offsetTop - 64, behavior: 'smooth' }); }
+            });
+        });
+    })();
+    function toggleFaq(btn) {
+        var item = btn.closest('.faq-item'), wasOpen = item.classList.contains('faq-open');
+        document.querySelectorAll('.faq-item').forEach(function(el) { el.classList.remove('faq-open'); });
+        if (!wasOpen) item.classList.add('faq-open');
+    }
+    </script>
+
+</body>
+</html>
